@@ -227,3 +227,23 @@ console.log("Connected javascript");
 // =======================
 
 // ========== Part 01 Completed ==========
+
+// ========== Part 02 Start ==========
+
+// Find A Max Number
+
+function maxNum(a, b, c) {
+
+    let max;
+
+    if (a > b && a > c) {
+        max = a
+    } else if (b > a && b > c) {
+        max = b
+    } else {
+        max = c
+    }
+    return max
+}
+console.log(maxNum(4, 4, 2));
+
