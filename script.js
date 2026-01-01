@@ -232,18 +232,40 @@ console.log("Connected javascript");
 
 // Find A Max Number
 
-function maxNum(a, b, c) {
+// function maxNum(a, b, c) {
 
-    let max;
+//     let max;
 
-    if (a > b && a > c) {
-        max = a
-    } else if (b > a && b > c) {
-        max = b
-    } else {
-        max = c
-    }
-    return max
-}
-console.log(maxNum(4, 4, 2));
+//     if (a > b && a > c) {
+//         max = a
+//     } else if (b > a && b > c) {
+//         max = b
+//     } else {
+//         max = c
+//     }
+//     return max
+// }
+// console.log(maxNum(4, 4, 2));
+
+// ===================
+
+// const button = document.querySelector(".btn");
+
+// button.addEventListener("click", () => {
+//     console.log("Clicked Me");
+
+// })
+
+// ===================
+
+let a = 100;
+let b = 100;
+let c = 50;
+
+let maxNum;
+
+a > b && a > c ? maxNum = a : b > c ? maxNum = b : maxNum = c;
+
+
+console.log(`The Biggest Number is ${maxNum}`);
 
