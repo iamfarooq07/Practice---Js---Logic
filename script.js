@@ -258,14 +258,42 @@ console.log("Connected javascript");
 
 // ===================
 
-let a = 100;
-let b = 100;
-let c = 50;
+// let a = 100;
+// let b = 100;
+// let c = 50;
 
-let maxNum;
+// let maxNum;
 
-a > b && a > c ? maxNum = a : b > c ? maxNum = b : maxNum = c;
+// a > b && a > c ? maxNum = a : b > c ? maxNum = b : maxNum = c;
 
 
-console.log(`The Biggest Number is ${maxNum}`);
+// console.log(`The Biggest Number is ${maxNum}`);
+
+// ===================
+
+// Leap Year Question
+const elem = document.getElementById("element");
+const btn = document.getElementById("btn");
+const Ullist = document.getElementById("list");
+
+btn.addEventListener("click", () => {
+    const inputVal = Number(elem.value);
+
+    if (!inputVal) {
+        alert("Please enter a valid year");
+        return;
+    }
+
+    const li = document.createElement("li");
+
+    if ((inputVal % 4 === 0)) {
+        li.textContent = `${inputVal} is a Leap Year`;
+    } else {
+        li.textContent = `${inputVal} is NOT a Leap Year`;
+    }
+
+    Ullist.appendChild(li);
+    elem.value = "";
+});
+
 
