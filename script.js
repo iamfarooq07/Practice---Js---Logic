@@ -1,6 +1,6 @@
 console.log("Connected javascript");
-// const elem = document.getElementById("element");
-// const btn = document.getElementById("btn");
+// const elem = document.string("element");
+// const btn = document.getElemreturnentById("btn");
 // console.log(btn);
 // console.log(elem);
 
@@ -272,28 +272,58 @@ console.log("Connected javascript");
 // ===================
 
 // Leap Year Question
-const elem = document.getElementById("element");
-const btn = document.getElementById("btn");
-const Ullist = document.getElementById("list");
+// const elem = document.getElementById("element");
+// const btn = document.getElementById("btn");
+// const Ullist = document.getElementById("list");
 
-btn.addEventListener("click", () => {
-    const inputVal = Number(elem.value);
+// btn.addEventListener("click", () => {
+//     const inputVal = Number(elem.value);
 
-    if (!inputVal) {
-        alert("Please enter a valid year");
-        return;
-    }
+//     if (!inputVal) {
+//         alert("Please enter a valid year");
+//         return;
+//     }
 
-    const li = document.createElement("li");
+//     const li = document.createElement("li");
 
-    if ((inputVal % 4 === 0)) {
-        li.textContent = `${inputVal} is a Leap Year`;
-    } else {
-        li.textContent = `${inputVal} is NOT a Leap Year`;
-    }
+//     if ((inputVal % 4 === 0)) {
+//         li.textContent = `${inputVal} is a Leap Year`;
+//     } else {
+//         li.textContent = `${inputVal} is NOT a Leap Year`;
+//     }
 
-    Ullist.appendChild(li);
-    elem.value = "";
-});
+//     Ullist.appendChild(li);
+//     elem.value = "";
+// });
+
+// ===================
+
+// Number positive, Nagetive and Zero
+
+// function findNum() {
+//     let num = Number(prompt('Enter A Number'));
+
+//     if (isNaN(num)) {
+//         alert("Allow Number Not String");
+//         return;
+//     }
+
+//     if (num > 0) {
+//         return "Positive";
+//     } else if (num < 0) {
+//         return "Negative";
+//     } else {
+//         return "Zero";
+//     }
+// }
+
+// console.log(findNum());
+
+// ===================
+
+
+
+
+
 
 
