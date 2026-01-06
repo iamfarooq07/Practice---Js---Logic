@@ -321,7 +321,50 @@ console.log("Connected javascript");
 
 // ===================
 
+// Find a Vowel and Consonants;
 
+const elem = document.getElementById("element");
+const btn = document.getElementById("btn");
+const Ullist = document.getElementById("list");
+
+btn.addEventListener("click", () => {
+    const data = elem.value.toLowerCase().trim();
+    elem.value = "";
+
+    let message = "";
+
+    if (data === "") {
+        message = "Please enter a letter";
+    } else if (["a", "e", "i", "o", "u"].includes(data)) {
+        message = "This is a Vowel Letter";
+    } else if (/^[a-z]$/.test(data)) {
+        message = "This is a Consonant";
+    } else {
+        message = "Not a valid alphabet";
+    }
+
+    console.log(message);
+    Ullist.textContent = message;
+});
+
+// function checkVowel() {
+
+//     // const character = value.toLowerCase();
+//     const character = prompt("Enter a letter").toLowerCase();
+
+//     if (character === "a" ||
+//         character === "e" ||
+//         character === "i" ||
+//         character === "o" ||
+//         character === "u" &&
+//         character !== "") {
+//         return "This Is Vowel Letter"
+//     } else if (/[a-z]/.test(character)) {
+//         return "This is Consonants"
+//     }
+//     return "Not a Vaild Alphabet"
+// }
+// // console.log(checkVowel());
 
 
 
