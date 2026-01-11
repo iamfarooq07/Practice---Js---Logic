@@ -323,29 +323,29 @@ console.log("Connected javascript");
 
 // Find a Vowel and Consonants;
 
-const elem = document.getElementById("element");
-const btn = document.getElementById("btn");
-const Ullist = document.getElementById("list");
+// const elem = document.getElementById("element");
+// const btn = document.getElementById("btn");
+// const Ullist = document.getElementById("list");
 
-btn.addEventListener("click", () => {
-    const data = elem.value.toLowerCase().trim();
-    elem.value = "";
+// btn.addEventListener("click", () => {
+//     const data = elem.value.toLowerCase().trim();
+//     elem.value = "";
 
-    let message = "";
+//     let message = "";
 
-    if (data === "") {
-        message = "Please enter a letter";
-    } else if (["a", "e", "i", "o", "u"].includes(data)) {
-        message = "This is a Vowel Letter";
-    } else if (/^[a-z]$/.test(data)) {
-        message = "This is a Consonant";
-    } else {
-        message = "Not a valid alphabet";
-    }
+//     if (data === "") {
+//         message = "Please enter a letter";
+//     } else if (["a", "e", "i", "o", "u"].includes(data)) {
+//         message = "This is a Vowel Letter";
+//     } else if (/^[a-z]$/.test(data)) {
+//         message = "This is a Consonant";
+//     } else {
+//         message = "Not a valid alphabet";
+//     }
 
-    console.log(message);
-    Ullist.textContent = message;
-});
+//     console.log(message);
+//     Ullist.textContent = message;
+// });
 
 // function checkVowel() {
 
@@ -365,6 +365,54 @@ btn.addEventListener("click", () => {
 //     return "Not a Vaild Alphabet"
 // }
 // // console.log(checkVowel());
+
+// ===================
+
+// Find a Again Leap Year Question
+
+// let year = prompt("Enter Your Year");
+// function checkLeapYear(year) {
+//     if (year === '') {
+//         console.log("Please Enter Your Year");
+//         return;
+//     }
+
+//     if ((year % 400 === 0) || (year % 4 === 0 && year % 100 !== 0)) {
+//         console.log("Leap Year");
+//     } else {
+//         console.log("Normal Year");
+//     }
+// }
+
+// // Example usage:
+// checkLeapYear(2024);
+// checkLeapYear(2025);
+
+// ========================
+
+// Find the Min and Max value for array ;
+
+// let data = [10, 13, 98, 56, 37, 87, 56, 24, 100, 200, 23]
+// console.log(data);
+
+
+// let max = data[0];
+// let min = data[0];
+// // console.log(max);
+
+
+// for (let i = 0; i < data.length; i++) {
+//     if (data[i] > max) {
+//         max = data[i]
+//     } else if (data[i] < min) {
+//         min = data[i]
+//     }
+//     // console.log(data[i]);
+// }
+
+
+// console.log(`The Largest Number is ${max}`);
+// console.log(`The Smallest Number is ${min}`);
 
 
 
