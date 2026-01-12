@@ -414,6 +414,166 @@ console.log("Connected javascript");
 // console.log(`The Largest Number is ${max}`);
 // console.log(`The Smallest Number is ${min}`);
 
+// ========================
+
+// let a = 10;
+
+// (function () {
+//     // code Block
+//     console.log(a);
+//     let a = 20;
+// })();
+// // console.log(a);
+
+// ========================
+
+// console.log(typeof foo);
+
+// var foo = function () {
+//     return "Hello";
+// };
+
+// console.log(typeof foo);
+
+// ========================
+
+// let x = 1;
+
+// function outer() {
+//     console.log(x);
+//     let x = 2;
+
+//     function inner() {
+//         console.log(x);
+//     }
+
+//     inner();
+// }
+
+// outer();
+
+// ========================
+
+// const arr = [3, 5, 2, 8, 1, 4];
+// let even = [];
+// let sum = 0;
+
+// for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] % 2 === 0) {
+//         even.push(arr[i])
+//         sum += arr[i]
+//     }
+
+// }
+// console.log(even);
+// console.log(sum);
+
+// Optimize Code and One Line Solution;
+
+// const arr = [3, 5, 2, 8, 1, 4];
+
+// let evenNum = arr.filter((n) => n % 2 === 0).reduce((acc, current) => acc + current, 0);
+// console.log(evenNum);
+
+// ========================
+
+// const names = ["Ali", "Sara", "Ahmed", "Zara", "Ayaan"];
+// let newArray = [];
+
+// for (let i = 0; i < names.length; i++) {
+//     let newNames = names[i].toUpperCase();
+
+//     if (newNames[0] === "A") {
+//         newArray.push(newNames)
+//     };
+// };
+// console.log(newArray);
+
+// Optimize Code and One Line Solution;
+
+// const names = ["Ali", "Sara", "Ahmed", "Zara", "Ayaan"];
+
+// let newNames =
+//     names.filter((n) => n[0].toUpperCase() === "A")
+//         .map((n) => n.toUpperCase())
+//         .sort();
+
+// console.log(newNames);
+
+// ========================
+
+// const nums = [12, 5, 8, 130, 44, 7, 200];
+
+// let even = nums.filter((n) => n % 2 == 0).map(n => n ** 2).reduce((acc, curt) => acc + curt, 0);
+// console.log(even);
+
+// ========================
+
+// const sentences = [
+//     "JavaScript is fun",
+//     "I love coding",
+//     "OpenAI is amazing",
+//     "Coding challenges are great"
+// ];
+
+// let srt = sentences.filter((n) => n.toLowerCase().includes("coding")).
+//     map(n => n.toUpperCase());
+// console.log(srt);
+
+// ========================
+
+// const students = [
+//     { name: "Ali", marks: 85 },
+//     { name: "Sara", marks: 92 },
+//     { name: "Ahmed", marks: 78 },
+//     { name: "Zara", marks: 95 },
+//     { name: "Ayaan", marks: 65 }
+// ];
+
+// let marks = students.filter(m => m.marks > 80).map(n => n.name.toUpperCase()).sort();
+// console.log(marks);
+
+// ========================
+
+// const products = [
+//     { name: "Laptop", price: 800, category: "Electronics" },
+//     { name: "Shirt", price: 40, category: "Clothing" },
+//     { name: "Phone", price: 600, category: "Electronics" },
+//     { name: "Shoes", price: 90, category: "Clothing" },
+//     { name: "Headphones", price: 120, category: "Electronics" }
+// ];
+
+// let newProducts =
+//     products.filter((n) => n.category === "Electronics" && n.price > 100).map((n) => n.name.toUpperCase());
+// console.log(newProducts);
+
+// ========================
+
+const employees = [
+    { name: "Ali", department: "IT", salary: 5000 },
+    { name: "Sara", department: "HR", salary: 4000 },
+    { name: "Ahmed", department: "IT", salary: 7000 },
+    { name: "Zara", department: "Finance", salary: 6000 },
+    { name: "Ayaan", department: "IT", salary: 3000 },
+    { name: "Maya", department: "HR", salary: 4500 }
+];
+
+const itEmployees = employees
+    .filter(n => n.department === "IT" && n.salary > 4000)
+    .sort((a, b) => b.salary - a.salary)
+    .map(n => n.name.toUpperCase());
+
+console.log(itEmployees);
+
+
+
+
+
+
+
+
+
+
 
 
 
