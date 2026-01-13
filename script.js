@@ -549,21 +549,35 @@ console.log("Connected javascript");
 
 // ========================
 
-const employees = [
-    { name: "Ali", department: "IT", salary: 5000 },
-    { name: "Sara", department: "HR", salary: 4000 },
-    { name: "Ahmed", department: "IT", salary: 7000 },
-    { name: "Zara", department: "Finance", salary: 6000 },
-    { name: "Ayaan", department: "IT", salary: 3000 },
-    { name: "Maya", department: "HR", salary: 4500 }
-];
+// const employees = [
+//     { name: "Ali", department: "IT", salary: 5000 },
+//     { name: "Sara", department: "HR", salary: 4000 },
+//     { name: "Ahmed", department: "IT", salary: 7000 },
+//     { name: "Zara", department: "Finance", salary: 6000 },
+//     { name: "Ayaan", department: "IT", salary: 3000 },
+//     { name: "Maya", department: "HR", salary: 4500 }
+// ];
 
-const itEmployees = employees
-    .filter(n => n.department === "IT" && n.salary > 4000)
-    .sort((a, b) => b.salary - a.salary)
-    .map(n => n.name.toUpperCase());
+// const itEmployees = employees
+//     .filter(n => n.department === "IT" && n.salary > 4000)
+//     .sort((a, b) => b.salary - a.salary)
+//     .map(n => n.name.toUpperCase());
 
-console.log(itEmployees);
+// console.log(itEmployees);
+
+// let arr = [9, 5, 7, 45, 5, 6, 4, 3, 2];
+// console.log(arr);
+
+// arr.sort();
+// console.log(arr);
+
+let names = ["Farooq", "Abdul", "Umer", "Ali"]
+console.log(names);
+
+let newArr = names.sort();
+console.log(newArr);
+
+
 
 
 
