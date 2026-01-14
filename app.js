@@ -206,7 +206,7 @@ const findRange = () => {
 
 console.log(products);
 
-// map Logic 
+// map Logic
 
 // let newTitle = products.map((n) => n.title);
 // const discountedProducts = products.map(product => ({
@@ -225,6 +225,62 @@ console.log(products);
 // // console.log(priceMin);
 // console.log(category);
 
-let rating = products.filter((value) => value.rating === 5);
-console.log(rating);
+// let rating = products.filter((value) => value.rating === 5);
+// console.log(rating);
 
+// Sort Logic Price ;
+
+// let highToLow = [...products].sort((a, b) => b.price - a.price);
+// console.log("High to Low:", highToLow);
+// let lowToHigh = [...products].sort((a, b) => a.price - b.price);
+// console.log("Low to high", lowToHigh);
+
+// ============
+
+// Sort Logic Rating
+
+// let lowToHigh = [...products].sort((a, b) => a.rating - b.rating);
+// console.log("Low to High:", lowToHigh);
+
+// let highToLow = [...products].sort((a, b) => b.rating - a.rating);
+// console.log("High to Low:", highToLow);
+
+// Sorting Basic Logic Done;
+
+// ============
+
+
+// Medium (Combination)
+
+// let arr = products.filter((value) => value.category === "Pizza" && value.rating > 4).map((n) => [{
+//     title: n.title,
+//     price: n.price
+// }]);
+// console.log(arr);
+
+// let ascending = products.filter((n) => n.category === "Shawarma").sort((a, b) => a.price - b.price)
+// console.log(ascending);
+
+// let descending = [...ascending].filter((m) => m.price <= 300).sort((a, b) => b.price - a.price);
+// console.log(descending);
+
+// ============
+
+// let data = products.map((n) => `Rs ${n.price}`.toUpperCase());
+// console.log(data);
+// let arr = [];
+// for (let i = 0; i < products.length; i++) {
+//     arr.push(`Rs ${products[i].price}`.toUpperCase())
+// }
+// console.log(arr);
+
+
+
+// ============
+
+// Level 3: Reduce(Important for Interviews)
+
+let total = products.reduce((acc, curt) => acc + curt.price, 0);
+let averagePrice = total / products.length;
+console.log(total);
+console.log(averagePrice);
