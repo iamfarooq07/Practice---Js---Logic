@@ -571,11 +571,28 @@ console.log("Connected javascript");
 // arr.sort();
 // console.log(arr);
 
-let names = ["Farooq", "Abdul", "Umer", "Ali"]
-console.log(names);
+// let names = ["Farooq", "Abdul", "Umer", "Ali"]
+// console.log(names);
 
-let newArr = names.sort();
-console.log(newArr);
+// let newArr = names.sort();
+// console.log(newArr);
+
+// ================
+
+const counter = createCounter();
+
+function increment() {
+    counter++
+}
+function decrement() {
+    counter--
+}
+
+console.log(counter.value());     // 0
+console.log(counter.increment()); // 1
+console.log(counter.increment()); // 2
+console.log(counter.decrement()); // 1
+
 
 
 

@@ -204,7 +204,7 @@ const findRange = () => {
 };
 // export const priceRange = findRange();
 
-console.log(products);
+// console.log(products);
 
 // map Logic
 
@@ -280,7 +280,155 @@ console.log(products);
 
 // Level 3: Reduce(Important for Interviews)
 
-let total = products.reduce((acc, curt) => acc + curt.price, 0);
-let averagePrice = total / products.length;
-console.log(total);
-console.log(averagePrice);
+// let total = products.reduce((acc, curt) => acc + curt.price, 0);
+// let averagePrice = total / products.length;
+// console.log(total);
+// console.log(averagePrice);
+
+
+// -----------------------Gpt Code-----------------------
+// let grouping = products.reduce((acc, value) => {
+//     if (!acc[value.category]) {
+//         acc[value.category] = { items: [], count: 0 };
+//     }
+//     acc[value.category].items.push(value);
+//     acc[value.category].count += 1;
+//     return acc;
+// }, {})
+// console.log(grouping);
+
+// let maxPrice = products.map((n) => n.price).reduce((acc, curt) => (curt > acc ? curt : acc), 0);
+// let minPrice = products.map((n) => n.price).reduce((acc, curt) => (curt <= acc ? curt : acc), Infinity);
+
+// console.log(`Max Prics ${maxPrice}`);
+// console.log(`Min Prics ${minPrice}`);
+
+// ============
+
+// Level 4: Real-World Logic;
+
+// Search Bar Sorting products item basic logic
+
+// const serInput = document.getElementById("search");
+// const button = document.getElementById("btn");
+// const formInput = document.getElementById("form");
+
+// formInput.addEventListener("submit", (e) => {
+//     e.preventDefault()
+//     const inputVal = serInput.value;
+//     let sortingData = products.filter((m) => m.category === inputVal);
+//     if (sortingData.length === 0) {
+//         alert(`${inputVal} Not Found`)
+//         serInput.value = ""
+//         return
+//     }
+//     console.log(sortingData);
+
+//     serInput.value = ""
+// })
+
+// ============
+
+// Rating Filter
+
+// let rating = products.filter((n) => n.rating >= 4 && n.rating <= 5);
+// console.log(rating);
+
+// let result = products.map((n) => n.title);
+// let check = result.filter((m) => m.title === result);
+// console.log(check);
+
+// console.log(result);
+
+// console.log(products[0].title);
+// let titleArr = []
+// let sameArr = []
+
+// for (let i = 0; i < products.length; i++) {
+//     // console.log(products[i].title);s
+//     titleArr.push(products[i].title)
+
+
+//     // console.log(titleArr);
+
+//     for (let j = 0; j < titleArr.length; j++) {
+//         if (titleArr[j] === products[i].title) {
+//             sameArr.push(titleArr[j])
+
+//         }
+
+//     }
+// }
+// console.log(sameArr);
+// let seen = {};
+// let sameArr = [];
+
+// for (let i = 0; i < products.length; i++) {
+//     let title = products[i].title;
+
+//     if (seen[title]) {
+//         sameArr.push(title);
+//     } else {
+//         seen[title] = true;
+//     }
+// }
+
+// console.log(sameArr);
+
+// ============
+
+const users = [
+    { id: 1, name: "Ali", skills: ["HTML", "CSS"] },
+    { id: 2, name: "Farooq", skills: ["JS", "React"] },
+    { id: 1, name: "Ali", skills: ["CSS", "JS"] },
+    { id: 3, name: "Ahmed", skills: ["Node", "JS"] },
+];
+// console.log(users);
+
+// const filtering = users.filter(
+//     (user, index) =>
+//         users.map(u => u.id).indexOf(user.id) === index
+// );
+
+// const filtering2 = users.filter((value, index) => users.map((n) => n.id).indexOf(value.id) === index)
+
+// // console.log(filtering2);
+// let arr = []
+// const merag = [...users].map((m) => m.id);
+// if (merag === 1) {
+//     arr.push(merag)
+// }
+// console.log(merag);
+// console.log(arr);
+
+// ===============Star Question ==================
+
+// let star = 5;
+
+// for (let i = 0; i <= 5; i++) {
+//     let str = "*";
+//     for (let j = 1; j <= i; j++) {
+//         str = str + "*";
+//     }
+//     console.log(str);
+
+// }
+
+
+
+// --------------Function Basic To Advance-------------------
+
+// function isEven(num) {
+//     if (typeof num !== "number" || num <= 0) {
+//         console.log("Invalid input");
+//         return
+//     }
+//     return num % 2 === 0 ? true : false
+
+// }
+// console.log(isEven(2));
+
+
+
+
+
