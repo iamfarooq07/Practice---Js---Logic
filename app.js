@@ -377,12 +377,12 @@ const findRange = () => {
 
 // ============
 
-const users = [
-    { id: 1, name: "Ali", skills: ["HTML", "CSS"] },
-    { id: 2, name: "Farooq", skills: ["JS", "React"] },
-    { id: 1, name: "Ali", skills: ["CSS", "JS"] },
-    { id: 3, name: "Ahmed", skills: ["Node", "JS"] },
-];
+// const users = [
+//     { id: 1, name: "Ali", skills: ["HTML", "CSS"] },
+//     { id: 2, name: "Farooq", skills: ["JS", "React"] },
+//     { id: 1, name: "Ali", skills: ["CSS", "JS"] },
+//     { id: 3, name: "Ahmed", skills: ["Node", "JS"] },
+// ];
 // console.log(users);
 
 // const filtering = users.filter(
@@ -427,6 +427,16 @@ const users = [
 
 // }
 // console.log(isEven(2));
+
+// function isEven(num) {
+//     if (typeof num !== "number" || num <= 0) {
+//         console.log("Invalid Input");
+//         return
+
+//     }
+//     return num % 2 === 0 ? `${num} is Even Number` : `${num} is Odd Number`
+// }
+// console.log(isEven(21));
 
 
 
