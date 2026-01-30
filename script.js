@@ -579,19 +579,108 @@ console.log("Connected javascript");
 
 // ================
 
-const counter = createCounter();
+// const counter = createCounter();
 
-function increment() {
-    counter++
-}
-function decrement() {
-    counter--
-}
+// function increment() {
+//     counter++
+// }
+// function decrement() {
+//     counter--
+// }
 
-console.log(counter.value());     // 0
-console.log(counter.increment()); // 1
-console.log(counter.increment()); // 2
-console.log(counter.decrement()); // 1
+// console.log(counter.value());     // 0
+// console.log(counter.increment()); // 1
+// console.log(counter.increment()); // 2
+// console.log(counter.decrement()); // 1
+
+// ================
+
+// String Revers
+
+// let str = "Javascript";
+// let newStr = str.split("");
+// console.log(newStr);
+
+
+// for (let i = 0; i < newStr.length; i++) {
+//     console.log(str[i]);
+
+// }
+
+// for (let i = newStr.length - 1; i >= 0; i--) {
+//     console.log(str[i]);
+
+// }
+
+// -------------------------
+
+// const users = [
+//     { id: 1, name: "Ali", age: 17, isActive: true },
+//     { id: 2, name: "Ahmed", age: 22, isActive: false },
+//     { id: 3, name: "Sara", age: 19, isActive: true },
+//     { id: 4, name: "Zara", age: 25, isActive: true },
+// ];
+
+// console.log(users);
+
+// const active = users.filter((m) => m.isActive === true && m.age >= 18).map((n) => n.name).sort();
+// console.log(active);
+
+// --------------------------
+
+// const orders = [
+//     { id: 1, customer: "Ali", amount: 2500, status: "completed" },
+//     { id: 2, customer: "Ahmed", amount: 1800, status: "pending" },
+//     { id: 3, customer: "Sara", amount: 3200, status: "completed" },
+//     { id: 4, customer: "Zara", amount: 1500, status: "completed" },
+// ];
+
+// const result = orders.filter((m) => m.status === "completed").reduce((acc, current) => acc + current.amount, 0);
+// const result2 = orders.filter((m) => m.status === "completed").map((n) => n.customer).sort()
+
+// let newObj = {
+//     totalAmount: result,
+//     customers: result2
+// }
+
+// console.log(newObj);
+
+// --------------------------
+
+// const transactions = [
+//     { id: 1, user: "Ali", amount: 500, type: "credit", category: "food" },
+//     { id: 2, user: "Ali", amount: 200, type: "debit", category: "travel" },
+//     { id: 3, user: "Sara", amount: 1000, type: "credit", category: "salary" },
+//     { id: 4, user: "Ali", amount: 300, type: "credit", category: "food" },
+//     { id: 5, user: "Sara", amount: 400, type: "debit", category: "shopping" },
+//     { id: 6, user: "Zara", amount: 700, type: "credit", category: "salary" },
+// ];
+
+// const result = transactions.reduce((acc, current) => {
+//     const user = current.user;
+
+//     if (!acc[user]) {
+//         acc[user] = {
+//             user: user,
+//             credit: 0,
+//             debit: 0,
+//             categories: new Set()
+//         };
+//     }
+//     if (current.type === "credit") {
+//         acc[user].credit += current.amount;
+//     } else {
+//         acc[user].debit += current.amount;
+//     }
+
+//     acc[user].categories.add(current.category);
+
+//     return acc;
+// }, {});
+
+// console.log(result);
+
+
 
 
 
