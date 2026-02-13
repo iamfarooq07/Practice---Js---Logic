@@ -82,47 +82,41 @@ console.log("Leed Code With JavaScript");
 // console.log(isValid("(]"));
 // console.log(isValid("([)]"));
 
+// ---------------------------
 
+// let nums = [2, 7, 11, 15];
+// let target = 9;
 
+// for (let i = 0; i < nums.length; i++) {
+//     console.log(nums[i]);
 
+//     for (let j = i; j < nums.length; j++) {
+//         // console.log(nums[j]);
 
+//         if (nums[i] + nums[j] === target) {
+//             console.log(nums[i], nums[j]);
+//         }
 
+//         if (nums[i] + nums[j] < 0) {
+//             console.log(false);
+//             break;
 
+//         }
 
+//     }
 
+// }
 
+// ---------------------------
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-function isValid(str) {
-    let stack = [];
-    let map = {
-        ")": "(",
-        "[": "]",
-        "{": "}",
-    }
-    for (let i = 0; i < map.length; i++) {
-
-        console.log(map[i]);
+var reverseList = function () {
+    let head = [1, 2, 3, 4, 5];
+    for (let i = head.length - 1; i >= 0; i--) {
+        console.log(head[i]);
     }
 
-}
+};
 
-// console.log();
-isValid()
-
+reverseList()
 
 
