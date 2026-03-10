@@ -109,14 +109,47 @@ console.log("Leed Code With JavaScript");
 
 // ---------------------------
 
-var reverseList = function () {
-    let head = [1, 2, 3, 4, 5];
-    for (let i = head.length - 1; i >= 0; i--) {
-        console.log(head[i]);
-    }
+// var reverseList = function () {
+//     let head = [1, 2, 3, 4, 5];
+//     for (let i = head.length - 1; i >= 0; i--) {
+//         console.log(head[i]);
+//     }
 
-};
+// };
 
-reverseList()
+// reverseList()
+
+// ----------------------------------------
+// largest Number
+
+// let arr = [10, 420, 30, 60, 50, 100];
+// let maxNum = arr[0];
+
+// for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] > maxNum) {
+//         maxNum = arr[i]
+//     }
+// }
+
+// let smallNum = arr[arr.length - 2];
+
+// console.log("Smallest Number", smallNum);
+
+// console.log("Largest Number", maxNum);
+
+// --------------------------------------
+
+const users = [
+    { id: 1, name: 'ali', isActive: true },
+    { id: 2, name: 'farooq', isActive: false },
+    { id: 3, name: 'hamza', isActive: true },
+];
+
+function active() {
+    const inactive = users.filter((n) => n.isActive === true).map((m) => m.name.toUpperCase());
+    console.log(inactive);
+
+}
+active()
 
 
