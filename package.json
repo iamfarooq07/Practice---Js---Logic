@@ -1,0 +1,25 @@
+{
+  "name": "dsa-in-js",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/iamfarooq07/Practice---Js---Logic#readme",
+  "bugs": {
+    "url": "https://github.com/iamfarooq07/Practice---Js---Logic/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamfarooq07/Practice---Js---Logic.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon backend.js"
+  },
+  "dependencies": {
+    "mongoose": "^9.2.4",
+    "nodemon": "^3.1.14"
+  }
+}
