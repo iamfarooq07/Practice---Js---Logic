@@ -139,17 +139,53 @@ console.log("Leed Code With JavaScript");
 
 // --------------------------------------
 
-const users = [
-    { id: 1, name: 'ali', isActive: true },
-    { id: 2, name: 'farooq', isActive: false },
-    { id: 3, name: 'hamza', isActive: true },
-];
+// const users = [
+//     { id: 1, name: 'ali', isActive: true },
+//     { id: 2, name: 'farooq', isActive: false },
+//     { id: 3, name: 'hamza', isActive: true },
+// ];
 
-function active() {
-    const inactive = users.filter((n) => n.isActive === true).map((m) => m.name.toUpperCase());
-    console.log(inactive);
+// function active() {
+//     const inactive = users.filter((n) => n.isActive === true).map((m) => m.name.toUpperCase());
+//     console.log(inactive);
 
-}
-active()
+// }
+// active()
+
+// Deep Copy and Shollow Copy
+
+// const obj = {
+//     name: "Ali",
+//     email: "ali@gmail.com",
+//     address: {
+//         city: "karachi",
+//         location: {
+//             home: "nazimabad"
+//         }
+//     }
+// }
+// console.log("Orignal Object", obj);
+
+// // Object Ko Copy Karna Ka old version
+// // let copy = Object.assign(obj);
+
+// // Object Ko Copy Karna Ka New version
+// let shallowCopy = { ...obj };
+// let deepCopy = JSON.parse(JSON.stringify(obj));
+
+// obj.address.city = "Islamabad"
+// obj.address.location.home = "North Karachi"
+
+// console.log("Deep Copy", deepCopy);
+// console.log("shallow Copy", shallowCopy);
+
+// console.log("Orignal Object", obj);
+// console.log("shallow Copy", shallowCopy);
+
+// =======================
+
+
+
+
 
 
