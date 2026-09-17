@@ -184,8 +184,203 @@ console.log("Leed Code With JavaScript");
 
 // =======================
 
+// function nameRevers(str) {
+//     for (let i = str.length; i >= 0; i--) {
+//         console.log(str[i]);
+//     }
+// }
+// nameRevers("Hello")
+
+// =======================
+
+// function countVowels(str) {
+//     let count = 0
+//     let vowel = "aeiouAEIOU"
+//     for (let i = 0; i < str.length; i++) {
+//         if (vowel.includes(str[i])) {
+//             count++
+//         }
+//     }
+//     console.log("counts", count);
+
+// }
+
+// countVowels("Web And Mobile App Developments")
+
+// =======================
+
+// function maxNumber() {
+//     let arr = [1, 2, 3, 4, 5];
+//     let max = arr[0];
+
+//     for (let i = 1; i < arr.length; i++) {
+//         if (arr[i] > max) {
+//             max = arr[i];
+//         }
+//     }
+//     console.log("Max Number:", max);
+// }
+// maxNumber();
+
+// ===============
+
+// function maxNum() {
+//     let arr = [10, 20, 30, 400, 50];
+//     let maxNumder = arr[0];
+
+//     for (let i = 0; i < arr.length; i++) {
+//         console.log(arr[i])
+
+//         if (arr[i] > maxNumder) {
+//             maxNumder = arr[i]
+//         }
+
+//     }
+//     console.log("Max Numder", maxNumder);
+// }
+
+// maxNum()
+
+// =================
+
+// function secondLargest() {
+//     let arr = [10, 20, 30, 400, 50];
+
+//     let largest = -Infinity;
+//     let secondLargest = -Infinity;
+
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] > largest) {
+//             secondLargest = largest;
+//             largest = arr[i];
+//         } else if (arr[i] > secondLargest && arr[i] !== largest) {
+//             secondLargest = arr[i];
+//         }
+//     }
+
+//     console.log("Largest:", largest);
+//     console.log("Second Largest:", secondLargest);
+// }
+
+// secondLargest();
 
 
+// Even And Odd
 
+// let value = alert(num)
 
+// function evenOdd(num) {
+//     if (num % 2 === 0) {
+//         console.log("Even");
+//     } else if (typeof num === "string") {
+//         console.log("Please Enter A Number");
+//     } else {
+//         console.log("Odd");
 
+//     }
+// }
+
+// evenOdd(value)
+
+// // String Return
+
+// function reverString(num) {
+//     for (let i = num.length - 0; i >= 0; i--) {
+//         console.log(num[i]);
+
+//         // }
+//         // for (let i = 0; i < num.length; i++) {
+//         //     console.log(num[i]);
+//         // }
+//     }
+// }
+
+// reverString("Farooq")
+
+// let arr = [1, 2, 3, 4, 5];
+// let newArr = Math.max(...arr);
+
+// console.log("Array", arr);
+// console.log("Max Number", newArr);
+
+// function arrMax() {
+//     let arr = [1, 2, 3, 4, 5];
+//     let max = arr[0];
+
+//     for (let i = 0; i < arr.length; i++) {
+
+//         if (arr[i] >= max) {
+//             max = arr[i]
+//         }
+//     }
+//     console.log(max);
+//     return max
+// }
+
+// arrMax()
+
+// function sumArr() {
+//     let arr = [5, 10, 15, 20];
+//     let sum = 0
+
+//     for (let item of arr) {
+//         sum += item
+//     }
+
+//     console.log(sum);
+//     return sum
+// }
+
+// sumArr()
+
+// function string(str) {
+//     let reversed = "";
+//     const vowels = "aeiouAEIOU";
+//     const vowelsArray = [];
+//     for (let item of str) {
+//         reversed = item += reversed
+//     };
+
+//     for (let itemTwo of reversed) {
+//         if (vowels.includes(itemTwo)) {
+//             vowelsArray.push(itemTwo)
+//         }
+
+//     }
+
+//     console.log(reversed);
+//     console.log(vowelsArray);
+
+// }
+// string("farood")
+
+// Level Up JavaScript
+
+// const users = [
+//     { name: "Ali", age: 17 },
+//     { name: "Ahmed", age: 22 },
+//     { name: "Farooq", age: 25 },
+//     { name: "Usman", age: 16 }
+// ];
+
+// function findData(users) {
+// let result = []
+// for (let item of users) {
+//     if (item.age > 18) {
+//         result.push(item)
+//     }
+
+// }
+// console.log(result);
+// return result
+
+// ECMAScript Code 
+// let result = users.filter((m) => m.age > 18);
+// console.log(result);
+
+// }
+
+// findData(users);
+
+findSecondLargest([10, 5, 20, 8, 15]);
+// Output: 15
