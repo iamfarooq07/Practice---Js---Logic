@@ -382,5 +382,39 @@ console.log("Leed Code With JavaScript");
 
 // findData(users);
 
-findSecondLargest([10, 5, 20, 8, 15]);
+// ===============
+
+// let arr =;
+
+// let max = -Infinity;
+// let secondMax = -Infinity;
+
+// for (const item of arr) {
+//     if (item > max) {
+//         secondMax = max; // The old max becomes the second largest
+//         max = item;      // Update max to the new highest number
+//     } else if (item > secondMax && item !== max) {
+//         secondMax = item; // Update secondMax if it's between max and the old secondMax
+//     }
+// }
+
+// console.log(secondMax); // Outputs: 15
+
+
+// findSecondLargest([10, 5, 20, 8, 15]);
 // Output: 15
+
+// =========================================
+
+// countFrequency([1, 2, 2, 3, 1, 1, 4])
+
+// function countFrequency(arr) {
+//     let frequency = {};
+
+//     for (let num of arr) {
+//         frequency[num] = (frequency[num] || 0) + 1;
+//     }
+
+//     return frequency;
+// }
+// console.log(countFrequency([1, 2, 2, 3, 1, 1, 4]))
