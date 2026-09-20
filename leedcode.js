@@ -319,6 +319,19 @@ console.log("Leed Code With JavaScript");
 
 // arrMax()
 
+// countFrequency([1, 2, 2, 3, 1, 1, 4])
+
+// function countFrequency(arr) {
+//     let frequency = {};
+
+//     for (let num of arr) {
+//         frequency[num] = (frequency[num] || 0) + 1;
+//     }
+
+//     return frequency;
+// }
+// console.log(countFrequency([1, 2, 2, 3, 1, 1, 4]))
+
 // function sumArr() {
 //     let arr = [5, 10, 15, 20];
 //     let sum = 0
