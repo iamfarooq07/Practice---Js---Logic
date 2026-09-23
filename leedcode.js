@@ -431,3 +431,30 @@ console.log("Leed Code With JavaScript");
 //     return frequency;
 // }
 // console.log(countFrequency([1, 2, 2, 3, 1, 1, 4]))
+
+// ==============================
+
+const products = [
+    { name: "Laptop", category: "Electronics", price: 120000 },
+    { name: "Phone", category: "Electronics", price: 80000 },
+    { name: "Shirt", category: "Clothing", price: 3000 },
+    { name: "Shoes", category: "Clothing", price: 7000 },
+    { name: "Headphones", category: "Electronics", price: 5000 },
+    { name: "Watch", category: "Accessories", price: 10000 }
+];
+
+const result = products.map((m) => m.category);
+console.log("Result", result);
+
+
+// const result = orders.filter((m) => m.status === "completed").map((n) => n.total).reduce((acc, value) => acc + value, 0)
+// console.log("Result", result);
+
+// const result = users.sort((m, n) => n.salary - m.salary);
+// console.log("Result", result);
+
+
+// const result = products.filter((m) => m.category === "Electronics").reduce((acc, current) => acc + current.price, 0);
+// console.log("Result", result);
+
+// const result = users.filter((m) => m.age > 18).map((n) => ({ name: n.name, city: n.city }));
