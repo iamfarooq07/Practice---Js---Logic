@@ -1,3 +1,5 @@
+
+
 console.log("Leed Code With JavaScript");
 
 // let nums = [2, 7, 11, 15];
@@ -387,7 +389,7 @@ console.log("Leed Code With JavaScript");
 // console.log(result);
 // return result
 
-// ECMAScript Code 
+// ECMAScript Code
 // let result = users.filter((m) => m.age > 18);
 // console.log(result);
 
@@ -434,17 +436,27 @@ console.log("Leed Code With JavaScript");
 
 // ==============================
 
-const products = [
-    { name: "Laptop", category: "Electronics", price: 120000 },
-    { name: "Phone", category: "Electronics", price: 80000 },
-    { name: "Shirt", category: "Clothing", price: 3000 },
-    { name: "Shoes", category: "Clothing", price: 7000 },
-    { name: "Headphones", category: "Electronics", price: 5000 },
-    { name: "Watch", category: "Accessories", price: 10000 }
-];
+// const users = [
+//     { name: "Ali", city: "Karachi", age: 22 },
+//     { name: "Ahmed", city: "Lahore", age: 25 },
+//     { name: "Sara", city: "Karachi", age: 27 },
+//     { name: "Usman", city: "Islamabad", age: 24 },
+//     { name: "Hina", city: "Karachi", age: 21 },
+//     { name: "Zain", city: "Lahore", age: 29 }
+// ];
 
-const result = products.map((m) => m.category);
-console.log("Result", result);
+// const result = users.reduce((acc, item) => {
+//     acc[item.city] = (acc[item.city] || 0) + item.age
+//     return acc
+// }, {})
+
+// console.log(result);
+
+// const result = products.reduce((acc, item) => {
+//     acc[item.category] = (acc[item.category] || 0) + item.price;
+
+//     return acc;
+// }, {});
 
 
 // const result = orders.filter((m) => m.status === "completed").map((n) => n.total).reduce((acc, value) => acc + value, 0)
@@ -458,3 +470,26 @@ console.log("Result", result);
 // console.log("Result", result);
 
 // const result = users.filter((m) => m.age > 18).map((n) => ({ name: n.name, city: n.city }));
+
+
+// ==========
+
+const products = [
+    { name: "Laptop", category: "Electronics", price: 120000 },
+    { name: "Phone", category: "Electronics", price: 80000 },
+    { name: "Shirt", category: "Clothing", price: 3000 },
+    { name: "Shoes", category: "Clothing", price: 7000 },
+    { name: "Watch", category: "Accessories", price: 10000 },
+    { name: "Bag", category: "Accessories", price: 6000 }
+];
+
+const result = products.reduce((acc, item) => {
+    console.log("Acc", acc);
+    console.log("Item", item);
+    console.log(acc[item.category]);
+
+    return acc
+}, 0);
+
+console.log("result", result);
+
