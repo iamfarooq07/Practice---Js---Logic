@@ -474,22 +474,78 @@ console.log("Leed Code With JavaScript");
 
 // ==========
 
-const products = [
-    { name: "Laptop", category: "Electronics", price: 120000 },
-    { name: "Phone", category: "Electronics", price: 80000 },
-    { name: "Shirt", category: "Clothing", price: 3000 },
-    { name: "Shoes", category: "Clothing", price: 7000 },
-    { name: "Watch", category: "Accessories", price: 10000 },
-    { name: "Bag", category: "Accessories", price: 6000 }
+// const products = [
+//     { name: "Laptop", category: "Electronics", price: 120000 },
+//     { name: "Phone", category: "Electronics", price: 80000 },
+//     { name: "Shirt", category: "Clothing", price: 3000 },
+//     { name: "Shoes", category: "Clothing", price: 7000 },
+//     { name: "Watch", category: "Accessories", price: 10000 },
+//     { name: "Bag", category: "Accessories", price: 6000 }
+// ];
+
+// const result = products.reduce((acc, item) => {
+
+//     if (!acc[item.category] || item.price > acc[item.category].price) {
+//         console.log("Acc", acc);
+//         console.log("item", item);
+
+//         acc[item.category] = item
+//     }
+//     return acc
+
+// }, {});
+
+// console.log("result", result);
+
+// ===============
+
+// const employees = [
+//     { name: "Ali", department: "IT", salary: 70000 },
+//     { name: "Ahmed", department: "HR", salary: 50000 },
+//     { name: "Sara", department: "IT", salary: 90000 },
+//     { name: "Usman", department: "Sales", salary: 60000 },
+//     { name: "Hina", department: "HR", salary: 75000 },
+//     { name: "Zain", department: "Sales", salary: 85000 }
+// ];
+
+// const result = employees.reduce((acc, item) => {
+//     if (!acc[item.department] || item.salary > acc[item.department].salary) {
+//         console.log("Acc One", acc);
+//         console.log("Item One", item);
+
+//         // Itme Acc ma Save Kawata hai
+//         acc[item.department] = item
+
+//         console.log("Acc Two", acc);
+//         console.log("item Two", item);
+//     }
+//     return acc
+// }, {})
+
+// console.log("Result", result);
+
+// ===============
+
+const orders = [
+    { customer: "Ali", category: "Electronics", amount: 50000 },
+    { customer: "Ahmed", category: "Clothing", amount: 15000 },
+    { customer: "Sara", category: "Electronics", amount: 80000 },
+    { customer: "Usman", category: "Clothing", amount: 25000 },
+    { customer: "Hina", category: "Electronics", amount: 60000 },
+    { customer: "Zain", category: "Clothing", amount: 40000 },
+    { customer: "Ayesha", category: "Electronics", amount: 90000 }
 ];
 
-const result = products.reduce((acc, item) => {
-    console.log("Acc", acc);
-    console.log("Item", item);
-    console.log(acc[item.category]);
-
+const result = orders.reduce((acc, item) => {
+    if (!acc[item.category] || item.amount > acc[item.category].amount) {
+        acc[item.category] = {
+            customer: item.customer,
+            Amount: item.amount
+        }
+    }
     return acc
-}, 0);
+}, {});
 
 console.log("result", result);
+
 
