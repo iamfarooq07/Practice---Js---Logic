@@ -526,26 +526,63 @@ console.log("Leed Code With JavaScript");
 
 // ===============
 
-const orders = [
-    { customer: "Ali", category: "Electronics", amount: 50000 },
-    { customer: "Ahmed", category: "Clothing", amount: 15000 },
-    { customer: "Sara", category: "Electronics", amount: 80000 },
-    { customer: "Usman", category: "Clothing", amount: 25000 },
-    { customer: "Hina", category: "Electronics", amount: 60000 },
-    { customer: "Zain", category: "Clothing", amount: 40000 },
-    { customer: "Ayesha", category: "Electronics", amount: 90000 }
+// const orders = [
+//     { customer: "Ali", category: "Electronics", amount: 50000 },
+//     { customer: "Ahmed", category: "Clothing", amount: 15000 },
+//     { customer: "Sara", category: "Electronics", amount: 80000 },
+//     { customer: "Usman", category: "Clothing", amount: 25000 },
+//     { customer: "Hina", category: "Electronics", amount: 60000 },
+//     { customer: "Zain", category: "Clothing", amount: 40000 },
+//     { customer: "Ayesha", category: "Electronics", amount: 90000 }
+// ];
+
+// const result = orders.reduce((acc, item) => {
+//     if (!acc[item.category] || item.amount > acc[item.category].amount) {
+//         acc[item.category] = {
+//             customer: item.customer,
+//             Amount: item.amount
+//         }
+//     }
+//     return acc
+// }, {});
+
+// console.log("result", result);
+
+// const a = "10";
+// const b = 5;
+// const c = true;
+
+// console.log(a + b); // 105
+// console.log(a - b); // 5
+// console.log(a * b); // 50
+// console.log(a == b); // false
+// console.log(a === b); // false
+// console.log(c + b); // 6
+
+// console.log(a);
+
+// var a = 10;
+
+// console.log(a);
+
+const users = [
+    {
+        name: "Ali",
+        skills: ["React", "Node", "MongoDB"]
+    },
+    {
+        name: "Sara",
+        skills: ["React", "Next.js"]
+    },
+    {
+        name: "Ahmed",
+        skills: ["Node", "Express", "MongoDB"]
+    }
 ];
 
-const result = orders.reduce((acc, item) => {
-    if (!acc[item.category] || item.amount > acc[item.category].amount) {
-        acc[item.category] = {
-            customer: item.customer,
-            Amount: item.amount
-        }
-    }
-    return acc
-}, {});
+const result = [...new Set(users.flatMap(user => user.skills))];
 
 console.log("result", result);
+
 
 
