@@ -680,6 +680,15 @@ console.log("Connected javascript");
 
 // console.log(result);
 
+let arr = ["react", "node", "next", "express", "mongodb", "react", "node"];
+const obj = new Set(arr);
+
+obj.add("farooq")
+console.log("Object", obj);
+console.log("Array", arr);
+
+
+
 
 
 

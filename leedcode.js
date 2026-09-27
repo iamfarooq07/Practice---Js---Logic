@@ -565,24 +565,86 @@ console.log("Leed Code With JavaScript");
 
 // console.log(a);
 
+// const users = [
+//     {
+//         name: "Ali",
+//         skills: ["React", "Node", "MongoDB"]
+//     },
+//     {
+//         name: "Sara",
+//         skills: ["React", "Next.js"]
+//     },
+//     {
+//         name: "Ahmed",
+//         skills: ["Node", "Express", "MongoDB"]
+//     }
+// ];
+
+// const result = [...new Set(users.flatMap(user => user.skills))];
+
+// console.log("result", result);
+
+// ============================
+
+// const users = [
+//     { name: "Ali", age: 22, role: "developer", salary: 70000 },
+//     { name: "Sara", age: 25, role: "designer", salary: 60000 },
+//     { name: "Ahmed", age: 28, role: "developer", salary: 90000 },
+//     { name: "Hina", age: 24, role: "developer", salary: 80000 },
+//     { name: "Usman", age: 30, role: "designer", salary: 75000 }
+// ];
+
+// const result = users.reduce((acc, item) => {
+//     if (!acc[item.role] || item.salary > acc[item.role].salary) {
+//         acc[item.role] = item
+//     }
+//     console.log("Acc", acc);
+//     console.log("Item", item)
+
+
+//     return acc
+// }, {});
+
+// console.log("Result", result);
+
+// ==============================
+
+// const products = [
+//     { name: "Laptop", category: "Electronics", price: 120000, rating: 4.5 },
+//     { name: "Phone", category: "Electronics", price: 80000, rating: 4.8 },
+//     { name: "Tablet", category: "Electronics", price: 60000, rating: 4.2 },
+//     { name: "Shirt", category: "Clothing", price: 3000, rating: 4.1 },
+//     { name: "Shoes", category: "Clothing", price: 7000, rating: 4.7 },
+//     { name: "Watch", category: "Accessories", price: 10000, rating: 4.6 }
+// ];
+
+// const result = products.reduce((acc, item) => {
+//     if (!acc[item.category] || item.rating > acc[item.category].rating) {
+//         acc[item.category] = {
+//             name: item.name,
+//             price: item.price,
+//             rating: item.rating
+//         }
+
+//     }
+//     return acc
+// }, {})
+
+// console.log(result);
+
+// =======================
+
 const users = [
-    {
-        name: "Ali",
-        skills: ["React", "Node", "MongoDB"]
-    },
-    {
-        name: "Sara",
-        skills: ["React", "Next.js"]
-    },
-    {
-        name: "Ahmed",
-        skills: ["Node", "Express", "MongoDB"]
-    }
+    { name: "Ali", skills: ["React", "Node"] },
+    { name: "Sara", skills: ["React", "MongoDB"] },
+    { name: "Ahmed", skills: ["Node", "Express"] },
+    { name: "Hina", skills: ["React", "Node", "MongoDB"] }
 ];
 
-const result = [...new Set(users.flatMap(user => user.skills))];
-
-console.log("result", result);
-
-
+const result = users.flatMap(m => m.skills).reduce((acc, item) => {
+    acc[item] = (acc[item] || 0) + 1
+    return acc
+}, {})
+console.log(result);
+ 
 
