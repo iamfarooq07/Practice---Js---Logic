@@ -634,17 +634,53 @@ console.log("Leed Code With JavaScript");
 
 // =======================
 
-const users = [
-    { name: "Ali", skills: ["React", "Node"] },
-    { name: "Sara", skills: ["React", "MongoDB"] },
-    { name: "Ahmed", skills: ["Node", "Express"] },
-    { name: "Hina", skills: ["React", "Node", "MongoDB"] }
-];
+// const users = [
+//     { name: "Ali", skills: ["React", "Node"] },
+//     { name: "Sara", skills: ["React", "MongoDB"] },
+//     { name: "Ahmed", skills: ["Node", "Express"] },
+//     { name: "Hina", skills: ["React", "Node", "MongoDB"] }
+// ];
 
-const result = users.flatMap(m => m.skills).reduce((acc, item) => {
-    acc[item] = (acc[item] || 0) + 1
-    return acc
-}, {})
-console.log(result);
- 
+// const result = users.flatMap(m => m.skills).reduce((acc, item) => {
+//     acc[item] = (acc[item] || 0) + 1
+//     return acc
+// }, {})
+// console.log(result);
+
+// =========================
+
+// const orders = [
+//     {
+//         id: 1,
+//         customer: "Ali",
+//         items: [
+//             { name: "Laptop", price: 100000, quantity: 1 },
+//             { name: "Mouse", price: 2000, quantity: 2 }
+//         ]
+//     },
+//     {
+//         id: 2,
+//         customer: "Sara",
+//         items: [
+//             { name: "Phone", price: 50000, quantity: 1 },
+//             { name: "Headphones", price: 3000, quantity: 2 }
+//         ]
+//     },
+//     {
+//         id: 3,
+//         customer: "Ahmed",
+//         items: [
+//             { name: "Keyboard", price: 4000, quantity: 3 },
+//             { name: "Monitor", price: 20000, quantity: 1 }
+//         ]
+//     }
+// ];
+
+// const totalCost = orders.flatMap(m => m.items).reduce((sum, item) => {
+//     return sum + item.price;
+// }, {});
+
+// console.log("Total:", totalCost);
+
+
 
