@@ -63,30 +63,98 @@
 
 // ==========================
 
-const users = [
+// const users = [
+//     {
+//         name: "Ali",
+//         skills: ["React", "Node", "MongoDB"]
+//     },
+//     {
+//         name: "Sara",
+//         skills: ["React", "Next.js"]
+//     },
+//     {
+//         name: "Ahmed",
+//         skills: ["Node", "Express", "MongoDB"]
+//     },
+//     {
+//         name: "Usman",
+//         skills: ["React", "Node"]
+//     }
+// ];
+
+
+// const result = users.flatMap(m => m.skills).reduce((acc, item) => {
+//     acc[item] = (acc[item] || 0) + 1;
+//     return acc
+// }, {})
+// console.log("result", result);
+
+// =====================
+
+// const employees = [
+//     { name: "Ali", department: "IT", salary: 80000 },
+//     { name: "Sara", department: "HR", salary: 60000 },
+//     { name: "Ahmed", department: "IT", salary: 100000 },
+//     { name: "Usman", department: "Finance", salary: 75000 },
+//     { name: "Ayesha", department: "HR", salary: 90000 },
+//     { name: "Bilal", department: "Finance", salary: 85000 },
+//     { name: "Zara", department: "IT", salary: 95000 }
+// ];
+
+// const result = employees.reduce((acc, item) => {
+//     if (!acc[item.department] || item.salary > acc[item.department].salary) {
+//         acc[item.department] = {
+//             name: item.name,
+//             salary: item.salary
+//         }
+//     }
+//     return acc
+// }, {});
+
+// console.log("Result", result);
+
+// ======================
+
+const orders = [
     {
-        name: "Ali",
-        skills: ["React", "Node", "MongoDB"]
+        id: 1,
+        customer: "Ali",
+        status: "completed",
+        items: [
+            { name: "Laptop", price: 120000, quantity: 1 },
+            { name: "Mouse", price: 2000, quantity: 2 }
+        ]
     },
     {
-        name: "Sara",
-        skills: ["React", "Next.js"]
+        id: 2,
+        customer: "Sara",
+        status: "pending",
+        items: [
+            { name: "Phone", price: 80000, quantity: 1 }
+        ]
     },
     {
-        name: "Ahmed",
-        skills: ["Node", "Express", "MongoDB"]
+        id: 3,
+        customer: "Ahmed",
+        status: "completed",
+        items: [
+            { name: "Keyboard", price: 5000, quantity: 2 },
+            { name: "Monitor", price: 30000, quantity: 1 }
+        ]
     },
     {
-        name: "Usman",
-        skills: ["React", "Node"]
+        id: 4,
+        customer: "Usman",
+        status: "completed",
+        items: [
+            { name: "Headphones", price: 4000, quantity: 3 }
+        ]
     }
 ];
 
+const result = orders.filter(m => m.status === "completed").flatMap(n => n.items).reduce((acc, item) => acc + (item.price * item.quantity), 0)
+console.log("Result", result);
 
-const result = users.flatMap(m => m.skills).reduce((acc, item) => {
-    acc[item] = (acc[item] || 0) + 1;
-    return acc
-}, {})
-console.log("result", result);
+
 
 
